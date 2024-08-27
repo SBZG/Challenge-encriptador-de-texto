@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header_image" src="./assets/Logo.png" alt="logo">
+    </header>
+    <main class="main_index">
+        <section class="section_input">
+            <textarea class="input_text" id="textInput" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="div_information">
+                <h6 class="information"><img src="./assets/bi_exclamation-circle-fill.png" alt="exclamation">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="buttons_input">
+            <button class="btn_Encrip" id="button_encript" onclick="btnEncrip()">Encriptar</button>
+            <button class="btn_Unencrip" onclick="btnunEncrip()" >Desencriptar</button>
+            </div>
+        </section>
+        <section class="section_output">
+            <textarea class="text_encrip" id="result" cols="20" rows="10"></textarea>
+            <div class="button_output">
+                <button class="btn_copy" onclick="btnCopy()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="presentation_footer">&copy;2024. Desarrollado por Juan Segura</p>
+        <nav class="nav_footer">
+            <a class="a" href="https://www.linkedin.com/in/juan-negrete25/"><img class="redirection_image" src="./assets/linkedin.png" alt="logo_linkedIn"></a>
+            <a class="a" href="https://github.com/SebasthSegura"><img class="redirection_image" src="./assets/github.png" alt="logo_Github"></a>
+        </nav>
+    </footer>
+    <script src="funtions.js"></script>
+</body>
+</html>
